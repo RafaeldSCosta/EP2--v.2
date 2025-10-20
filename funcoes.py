@@ -50,3 +50,16 @@ def afundados(frota, tabuleiro):
             if afundou == True:
                 contador = contador + 1
     return contador
+
+def posicao_valida(frota,linha, coluna, orientacao, tam):
+    posicoes= define_posicoes(linha, coluna, orientacao, tam)
+    for line, column in posicoes:
+        if line <0 or line>9 or column<0 or column>9:
+            return False
+    
+    for nome in frota:
+        for navio in frota[nome]:
+            for posicao in navio:
+                if posicao in posicoes:
+                    return False
+    return True
