@@ -63,3 +63,4 @@ def posicao_valida(frota,linha, coluna, orientacao, tam):
                 if posicao in posicoes:
                     return False
     return True
+
