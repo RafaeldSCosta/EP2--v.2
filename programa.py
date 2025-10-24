@@ -119,3 +119,5 @@ while jogando:
     if afundados(frota_oponente, tabuleiro_oponente) == total_navios_oponente:
         print("Parabéns! Você derrubou todos os navios do seu oponente!")
         jogando = False
+
+print('teste')
