@@ -120,4 +120,3 @@ while jogando:
         print("Parabéns! Você derrubou todos os navios do seu oponente!")
         jogando = False
 
-print('teste')
